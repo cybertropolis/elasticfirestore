@@ -1,0 +1,5 @@
+{
+    "databaseURL": "https://rapid-rabbit-market.firebaseio.com",
+    "projectId": "rapid-rabbit-market",
+    "storageBucket": "bucket-name.appspot.com"
+}

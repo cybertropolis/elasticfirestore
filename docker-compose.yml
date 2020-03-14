@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    elasticfire:
+        build: .
+        image: elasticfire:development
+        environment:
+            FB_URL: https://<your project name>.firebaseio.com
+            ES_HOST: elasticsearch
+            NODE_ENV: production
+        volumes:
+            - ./service-account.json:/opt/app/service-account.json
+
+    elasticsearch:
+        image: elasticsearch:5.1.1-alpine

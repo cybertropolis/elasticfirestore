@@ -1,0 +1,37 @@
+{
+    "name": "elasticfire",
+    "version": "0.1.0",
+    "description": "A ElasticSearch plugin for Firebase Cloud Firestore",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rafaelluisdacostacoelho/elasticfire.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "start": "nodemon --watch \"src/\" --exec \"ts-node src/main.ts\" -e ts",
+        "build": "tsc",
+        "prod": "npm run build && node dist/main.js"
+    },
+    "main": "src/main.mjs",
+    "dependencies": {
+        "JQDeferred": "~2.1.0",
+        "colors": "^1.4.0",
+        "elasticsearch": "^16.6.0",
+        "firebase-admin": "^8.9.2",
+        "firebase-functions": "^3.3.0",
+        "nodemon": "^2.0.2",
+        "ts-node": "^8.6.2",
+        "typescript": "^3.7.5"
+    },
+    "devDependencies": {
+        "@types/elasticsearch": "^5.0.36"
+    },
+    "bugs": {
+        "url": "https://github.com/rafaelluisdacostacoelho/elasticfire/issues"
+    },
+    "homepage": "https://github.com/rafaelluisdacostacoelho/elasticfire#readme",
+    "directories": {
+        "src": "src"
+    },
+    "author": "Rafael Luis da Costa Coelho"
+}
